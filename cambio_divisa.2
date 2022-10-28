@@ -1,0 +1,18 @@
+Proceso cambio_divisa
+	//Paso 1: ingresar la cantidad en pesos mexicanos.
+	Definir cantidad Como Real;
+	Escribir "Ingresa la cantidad de pesos mexicanos";
+	Leer cantidad;
+	//Paso 2: Dividir la cantidad entre 2.
+	Definir mitad Como Real;
+	Mitad <- cantidad /2;
+	//Paso 3: Convertir la primera mitad a dolares
+	Definir Dolares Como Real;
+	Dolares <- mitad /19.75;
+	//Paso 4: Convertir la segunda mitad a euros.
+	Definir Euros Como Real;
+	Euros <- dolares * 0.883;
+	//Paso 5: DAr a conocer las cantiades.
+	Escribir "Su Saldo en Dolares es $ " ,dolares;
+	Escribir "Su Saldo en Euros es $ " ,Euros;
+FinProceso
