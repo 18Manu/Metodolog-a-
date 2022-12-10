@@ -1,0 +1,45 @@
+Proceso Relog_digital
+	
+	Escribir "Comenzara cunaod Manuel Mata Ponga la hora ";
+	Escribir "Algoritmo: Relog digital";
+	
+	
+	Definir horas,minut,segund Como Real;
+	Definir hora,minu,segun1 Como Real;
+	
+	Escribir Sin Saltar "No agregue solo segundos porque no va a alcanzara correr (00-59)";
+	Leer segund;
+	Escribir Sin Saltar "agregar minutos (00-59)";
+	Leer minut;
+	Escribir Sin Saltar "Si gusta puede agregar horas(00-23)";
+	Leer horas;
+	
+	Escribir "HORAS - MINUTOS Y SEGUNDOS",horas,":",minut,":",segund;
+	
+	Esperar 2 Segundos;
+	Si horas >=0 y horas <=23 Entonces
+		Si minut >= 0 y minut <= 59 Entonces
+			Si segund>= 0 y segund <= 59  Entonces
+				Para hora<-horas Hasta 0 Con Paso -1 Hacer
+					Para minu<-minut Hasta 0 Con Paso -1 Hacer
+						Para segun1<-segund Hasta 0 Con Paso -1 Hacer
+							
+							Escribir Sin Saltar hora,":",minu,":",segun1;
+							Esperar 1 Segundos;
+							Esperar 1 segundo;
+							Limpiar Pantalla;
+						FinPara
+					FinPara
+				FinPara
+			SiNo
+				Escribir "No creo, segundos incorrectos";
+			FinSi
+		SiNo
+			Escribir "Sigue intentando :( , minutos incorrectos";
+		FinSi
+	SiNo
+		Escribir "Me quieres ver la cara de 3stupid4, horas incorrectas";
+	FinSi
+	
+	
+FinProceso
